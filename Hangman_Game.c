@@ -147,6 +147,7 @@ void byeAnimation(){
 
 // <------------------------------------------ DRAW HANGMAN FUNCTION------------------------------------------>
 // ye function hangman draw karega guesses k according 
+
 void drawHangman(int guesses) {
     switch (guesses) {
         case 6:
@@ -275,7 +276,7 @@ void getRandomWord(char word[], int category) {
         exit(1);
     }
 
-    char words[100][20];
+    char words[30][20];
     int count = 0;
     char temp[20];
 
@@ -287,10 +288,10 @@ void getRandomWord(char word[], int category) {
 
     fclose(file);
 
-    if (count == 0) {
-        printf("Error: No words found in file %s\n", fileName);
-        exit(1);
-    }
+//    if (count == 0) {
+//        printf("Error: No words found in file %s\n", fileName);
+//        exit(1);
+//    }
 
     int randomIndex = rand() % count;
     strcpy(word, words[randomIndex]);
@@ -330,6 +331,9 @@ void playRound(char word[]) {
         for (int i = 0; i < guessedCount; i++) {
             printf("%c ", guessedLetters[i]);
         }
+        
+        
+        
         printf("\n\nGuess a letter: ");
 
         char guess;
@@ -358,7 +362,7 @@ void playRound(char word[]) {
             continue;
         }
 
-        // Sye guessed letter store karega
+        // ye guessed letter store karega
         guessedLetters[guessedCount++] = guess;
 
         int correctGuess = 0;
