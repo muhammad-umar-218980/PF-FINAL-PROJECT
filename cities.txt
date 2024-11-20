@@ -1,0 +1,25 @@
+makkah
+madina
+new york
+london
+paris
+tokyo
+karachi
+lahore
+islamabad
+peshawar
+quetta
+hyderabad
+muree
+riyadh
+jeddah
+istanbul
+ankara
+abudhabi
+dubai
+doha
+kabul
+sharjah
+faisalabad
+multan
+rawalpindi
