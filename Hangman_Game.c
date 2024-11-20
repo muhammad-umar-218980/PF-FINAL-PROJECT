@@ -96,17 +96,6 @@ void animation() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 // <------------------------------------------ WELCOME AGAIN ANIMATION ------------------------------------------>
 void welcomeAgain() {
     char text[] = "WELCOME AGAIN !!";
@@ -139,12 +128,6 @@ void welcomeAgain() {
 
 
 
-
-
-
-
-
-
 // <------------------------------------------ BYE AGAIN ANIMATION ------------------------------------------>
 void byeAnimation(){
     char text[] = "\n\n THANK YOU FOR PLAYING HANGMAN \n\n GOOD BYE !!";
@@ -157,11 +140,6 @@ void byeAnimation(){
 
     printf("\n\n");
 }
-
-
-
-
-
 
 
 
@@ -247,21 +225,6 @@ void drawHangman(int guesses) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // <------------------------------------------ CHOOSE CATEGORY------------------------------------------>
 // so basically this function is used to choose a category out of 4 
 int chooseCategory() {
@@ -282,9 +245,6 @@ int chooseCategory() {
 
     return choice;
 }
-
-
-
 
 
 
@@ -335,22 +295,6 @@ void getRandomWord(char word[], int category) {
     int randomIndex = rand() % count;
     strcpy(word, words[randomIndex]);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
